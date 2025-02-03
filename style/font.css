@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Outfit", serif;
+}
+
+:root {
+    --silver : rgba(168, 191, 201, 1);
+	--silver-hover : rgba(219, 232, 237, 1);
+
+    --light-yellow: rgba(242, 177, 55, 1);
+	--light-yellow-hover: rgba(255, 200, 96, 1);
+
+    --light-blue : rgba(49, 195, 189, 1);
+	--light-blue-hover : rgba(101, 233, 228, 1);
+
+    --dark-navy : rgba(26, 42, 51, 1);
+	--dark-navy-hover : rgba(31, 54, 65, 1);
+	--semi-dark-navy: rgba(31, 54, 65, 1);
+}
+
+/* ------------------------------- Font -------------------------------  */
+
+.heading-L {
+	font-size: 40px;
+	font-weight: 700;
+	cursor: default;
+}
+
+.heading-M {
+	font-size: 24px;
+	font-weight: 700;
+	cursor: default;
+}
+
+.heading-S {
+	font-size: 20px;
+	font-weight: 700;
+	cursor: default;
+}
+
+.heading-XS {
+	font-size: 16px;
+	font-weight: 700;
+	cursor: default;
+}
+
+.heading-XXS {
+	font-size: 14px;
+	font-weight: 400;
+	cursor: default;
+}
+
+/* ------------------------------- Button -------------------------------  */
+
+.button-mode {
+	padding-top: 17px;
+	padding-bottom: 25px;
+	border-radius: 15px;
+	width: 100%;
+	font-weight: 700;
+	font-size: 20px;
+	border: none;
+	color: var(--dark-navy);
+	cursor: pointer;
+}
+
+.button-orange {
+	background: var(--light-yellow);
+	box-shadow: 0px -8px 0px 0px rgba(204, 139, 19, 1) inset;
+}
+
+.button-orange:hover {
+	background: var(--light-yellow-hover);
+}
+
+.button-blue {
+	box-shadow: 0px -8px 0px 0px rgba(17, 140, 135, 1) inset;
+	background: var(--light-blue);
+}
+
+.button-blue:hover {
+	background: var(--light-blue-hover);
+}

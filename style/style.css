@@ -1,0 +1,99 @@
+body {
+	background-color: rgba(26, 42, 51, 1);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section {
+	height: 80%;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.asset {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+.PLAYER {
+	box-shadow: 0px -8px 0px 0px rgba(16, 33, 42, 1) inset;
+	background: var(--semi-dark-navy);
+	width: 100%;
+	border-radius: 15px;
+	color: var(--silver);
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+}
+
+.asset-player {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 9px 8px;
+	background-color: var(--dark-navy);
+	border-radius: 10px;
+}
+
+.cross-div {
+	padding: 20px;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border: none;
+	background-color: var(--dark-navy);
+	border-radius: 10px;
+}
+
+.cross-div:hover {
+	background: rgba(168, 191, 201, 0.05);
+}
+
+.selected {
+	background-color: var(--silver);
+	fill: var(--dark-navy);
+}
+
+.unselected {
+	background-color: var(--dark-navy);
+	fill: var(--silver);
+}
+
+.oval-div {
+	background-color: var(--silver);
+	padding: 11px 50px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	cursor: pointer;
+	border: none;
+	background-color: var(--silver);
+}
+
+@media screen and (min-width: 768px) {
+	section {
+		height: 50%;
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	section {
+		height: 30%;
+		width: 40%;
+	}
+}
