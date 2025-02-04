@@ -1,0 +1,127 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	background: var(--dark-navy);
+	padding: 24px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.part-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.asset {
+	display: flex;
+	gap: 8px;
+}
+
+.turn {
+	background-color: var(--semi-dark-navy);
+	box-shadow: 0px -4px 0px 0px rgba(16, 33, 42, 1) inset;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 9px;
+	border-radius: 5px;
+	padding: 9px 15px;
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--silver);
+}
+
+.redo {
+	height: 40px;
+	width: 40px;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--silver);
+	box-shadow: 0px -4px 0px 0px rgba(107, 137, 151, 1) inset;
+}
+
+.part-2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.button-blue-game {
+	height: 96px;
+	width: 96px;
+	border: none;
+	background-color: var(--semi-dark-navy);
+	border-radius: 10px;
+	box-shadow: 0px -8px 0px 0px rgba(16, 33, 42, 1) inset;
+}
+
+.part-3 {
+	display: flex;
+	justify-content: center;
+    justify-content: space-between;
+}
+
+.point-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+	border-radius: 10px;
+	width: 30%;
+}
+
+.blue-div {
+	background-color: var(--light-blue);
+}
+
+.grey-div {
+    background-color: var(--silver);
+}
+
+.yellow-div {
+    background-color: var(--light-yellow);
+}
+
+.name {
+	font-size: 14px;
+	font-weight: 400;
+	width: 100%;
+}
+
+.name-score {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+@media screen and (min-width : 748px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width : 1024px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section {
+        width: 20%;
+    }
+}

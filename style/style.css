@@ -61,16 +61,6 @@ section {
 	background: rgba(168, 191, 201, 0.05);
 }
 
-.selected {
-	background-color: var(--silver);
-	fill: var(--dark-navy);
-}
-
-.unselected {
-	background-color: var(--dark-navy);
-	fill: var(--silver);
-}
-
 .oval-div {
 	background-color: var(--silver);
 	padding: 11px 50px;
