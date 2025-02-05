@@ -2,13 +2,14 @@ body {
 	height: 100vh;
 	width: 100vw;
 	background: var(--dark-navy);
-	padding: 24px;
+	position: relative;
 }
 
 section {
 	display: flex;
 	flex-direction: column;
 	gap: 60px;
+	padding: 24px;
 }
 
 .part-1 {
@@ -54,6 +55,51 @@ section {
 	gap: 20px;
 }
 
+.lostPage {
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	background-color: var(--semi-dark-navy);
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	display: none;
+}
+
+h2 {
+	color: var(--silver);
+}
+
+.button-div {
+	display: flex;
+	gap: 16px;
+}
+
+.button-silver {
+	background-color: var(--silver);
+	box-shadow: 0px -4px 0px 0px rgba(107, 137, 151, 1) inset;
+	border: none;
+	padding: 15px 18px;
+	border-radius: 10px;
+	color: var(--dark-navy);
+}
+
+.button-yellow {
+	background-color: var(--light-yellow);
+	box-shadow: 0px -4px 0px 0px rgba(204, 139, 19, 1) inset;
+	border: none;
+	padding: 15px 18px;
+	border-radius: 10px;
+	color: var(--dark-navy);
+}
+
+.restartPage {
+	position: absolute;
+}
+
 .button-blue-game {
 	height: 96px;
 	width: 96px;
@@ -66,15 +112,15 @@ section {
 .part-3 {
 	display: flex;
 	justify-content: center;
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 .point-div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
+	justify-content: center;
+	padding: 12px 20px;
 	border-radius: 10px;
 	width: 30%;
 }
@@ -84,11 +130,11 @@ section {
 }
 
 .grey-div {
-    background-color: var(--silver);
+	background-color: var(--silver);
 }
 
 .yellow-div {
-    background-color: var(--light-yellow);
+	background-color: var(--light-yellow);
 }
 
 .name {
@@ -102,26 +148,122 @@ section {
 	font-weight: 700;
 }
 
-@media screen and (min-width : 748px) {
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    section {
-        width: 50%;
-    }
+p {
+	text-align: center;
 }
 
-@media screen and (min-width : 1024px) {
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+/* ----------------------------------------------------- */
 
-    section {
-        width: 20%;
-    }
+.gameLunch {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: var(--dark-navy);
+	display: none;
+}
+
+.gameLunchDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 32px;
+	width: 40%;
+}
+
+.asset {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+.PLAYER {
+	box-shadow: 0px -8px 0px 0px rgba(16, 33, 42, 1) inset;
+	background: var(--semi-dark-navy);
+	width: 100%;
+	border-radius: 15px;
+	color: var(--silver);
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+}
+
+.asset-player {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 9px 8px;
+	background-color: var(--dark-navy);
+	border-radius: 10px;
+}
+
+.cross-div {
+	padding: 20px;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border: none;
+	background-color: var(--dark-navy);
+	border-radius: 10px;
+}
+
+.cross-div:hover {
+	background: rgba(168, 191, 201, 0.05);
+}
+
+.oval-div {
+	background-color: var(--silver);
+	padding: 11px 50px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	cursor: pointer;
+	border: none;
+	background-color: var(--silver);
+}
+
+/* ----------------------------------------------------- */
+
+@media screen and (min-width: 748px) {
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	.redo {
+		height: 50px;
+		width: 50px;
+	}
+
+	.turn {
+		padding: 20px 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.redo {
+		height: 40px;
+		width: 40px;
+	}
+
+	.turn {
+		padding: 9px 12px;
+	}
+
+
 }
