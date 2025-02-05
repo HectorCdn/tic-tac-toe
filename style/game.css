@@ -235,6 +235,13 @@ p {
 	background-color: var(--silver);
 }
 
+
+/* ----------------------------------------------------- */
+
+.button-blue-game:hover {
+	background-color: var(--dark-navy);
+}
+
 /* ----------------------------------------------------- */
 
 @media screen and (min-width: 748px) {
